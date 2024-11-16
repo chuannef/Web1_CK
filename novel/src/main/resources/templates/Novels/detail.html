@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Detail</title>
+</head>
+<body>
+<h2>Novel Details</h2>
+<p>Title: <span th:text="${novel.title}"></span></p>
+<p>Genre: <span th:text="${novel.genre}"></span></p>
+<p>Description: <span th:text="${novel.description}"></span></p>
+
+<a href="/novels">Back to List</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novels List</title>
+</head>
+<body>
+<h2>Novels List</h2>
+<a href="/novels/new">Add New Novel</a><br><br>
+
+<ul>
+    <th:block th:each="novel : ${novels}">
+        <li>
+            <a th:href="@{/novels/{id}(id=${novel.id})}" th:text="${novel.title}">Novel Title</a> -
+            <a th:href="@{/novels/delete/{id}(id=${novel.id})}">Delete</a>
+        </li>
+    </th:block>
+</ul>
+</body>
+</html>

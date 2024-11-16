@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Novel</title>
+</head>
+<body>
+<h2>Create New Novel</h2>
+<form action="/novels" method="POST">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" value="${novel.title}" required><br><br>
+
+    <label for="genre">Genre:</label><br>
+    <input type="text" id="genre" name="genre" value="${novel.genre}" required><br><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" required>${novel.description}</textarea><br><br>
+
+    <button type="submit">Save Novel</button>
+</form>
+</body>
+</html>
